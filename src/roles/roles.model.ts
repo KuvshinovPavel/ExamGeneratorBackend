@@ -3,12 +3,13 @@ import { User } from "../user/user.model";
 import { UserRoles } from "./user-roles.model";
 
 
-interface RoleAtrributes {
+interface RoleAttributes {
+
     value: string
 }
 
 @Table({ tableName: "roles", createdAt: false, updatedAt: false })
-export class Role extends Model<Role, RoleAtrributes>{
+export class Role extends Model<Role, RoleAttributes>{
     @Column({ primaryKey: true, unique: true, autoIncrement: true, type: DataType.INTEGER })
     id: number;
 

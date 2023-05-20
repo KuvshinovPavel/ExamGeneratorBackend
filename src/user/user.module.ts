@@ -12,7 +12,7 @@ import { UserRoles } from 'src/roles/user-roles.model';
   controllers: [UserController],
   providers: [UserService],
   imports:[
-    forwardRef(()=>{AuthModule}),
+    forwardRef(()=>AuthModule),
     RolesModule,
     SequelizeModule.forFeature([User, Role, UserRoles])
   ],
