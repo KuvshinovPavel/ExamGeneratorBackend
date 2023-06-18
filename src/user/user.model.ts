@@ -22,8 +22,13 @@ export class User extends Model<User, UserAttributes> {
     @Column({type:DataType.STRING,  allowNull:false})
     password: string;
 
+    @Column({type: DataType.INTEGER})
+    rightAnswers: number;
+
+    @Column({type: DataType.INTEGER})
+    wrongAnswers:number;
     @BelongsToMany(()=>Role,()=>UserRoles)
     roles: Role[];
 
-    
+
 }
