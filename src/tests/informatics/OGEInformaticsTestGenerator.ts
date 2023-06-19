@@ -130,6 +130,6 @@ return 0;
     let description = task6_t1[5];
 
 
-    return {cppCode, pascalCode, basicCode, pythonCode, rightAnswer, description};
+    return [{cppCode, pascalCode, basicCode, pythonCode, rightAnswer, description}];
   }
 }

@@ -14,7 +14,7 @@ export class TestsController {
     //const rightAnswer = parseFloat(eval(stringEval)).toPrecision(3);
     return this.ogeMathService.generateEntireTestOGEMath();
   }
-  @Get('oge-inf')
+  @Get('oge_inf')
   generateTestOGEInf() {
    // const [stringEval, latexEval] = this.ogeMathService.task6_type1();
     //const rightAnswer = parseFloat(eval(stringEval)).toPrecision(3);
